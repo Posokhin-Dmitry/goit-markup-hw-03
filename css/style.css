@@ -263,6 +263,7 @@ img {
   padding: 6px 22px;
   font-weight: 500;
   line-height: 1.62;
+  cursor: pointer;
   letter-spacing: 0.03em;
   background: #f5f4fa;
   border-radius: 4px;
