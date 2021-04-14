@@ -157,7 +157,6 @@ img {
 }
 
 .button {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px;
   font-weight: bold;
@@ -167,6 +166,7 @@ img {
   letter-spacing: 0.06em;
   background: var(--accent-color);
   color: var(--secondary-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-style: none;
 }
 
@@ -292,8 +292,8 @@ img {
   margin-top: -30px;
 }
 
-.project-cards > .card-item {
-  flex-basis: calc(100% / 3 - 30);
+.project-cards .card-item {
+  flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -339,6 +339,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  width: 231px;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
