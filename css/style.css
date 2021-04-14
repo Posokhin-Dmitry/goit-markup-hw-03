@@ -62,9 +62,11 @@ img {
 /* ШАПКА */
 
 .header {
+  border-bottom: 1px solid #ececec;
+}
+.header-content {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .nav-header {
@@ -247,18 +249,29 @@ img {
 }
 
 .filters-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
   list-style: none;
 }
 
+.button-item + .button-item {
+  margin-left: 10px;
+}
+
 .filter-button {
-  font-family: Roboto;
-  font-style: normal;
+  padding: 6px 22px;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border-radius: 4px;
   color: var(--title-text-color);
+  border-style: none;
+}
+
+.filter-button + .filter-button {
+  margin-left: 8px;
 }
 
 .filter-button:hover,
@@ -268,7 +281,19 @@ img {
 }
 
 .project-cards {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.project-cards > .card-item {
+  flex-basis: calc(100% / 3 - 30);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .link-card {
@@ -287,10 +312,7 @@ img {
 }
 
 .card-content {
-  padding: 20px, 24px;
-  border: 1px solid #eeeeee;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  padding: 20px 24px;
 }
 
 .filter-title {
